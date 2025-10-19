@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment #6 — JavaScript Basics (DOM & Events)</title>
+</head>
+<body>
+  <h1>Assignment #6 — JavaScript Basics (DOM & Events)</h1>
+  <p>Student: <strong>Aktilek Korganbek</strong> | Group: <strong>SE-2428</strong></p>
+
+  <section>
+    <h2>Part 1 — Introduction to JavaScript</h2>
+    <h3>Task 0 — First Script</h3>
+    <p>Open console to see name and group. Alert will appear on load.</p>
+
+    <h3>Task 1 — Variables & Operators</h3>
+    <p>Open console to see variables and arithmetic results.</p>
+  </section>
+
+
+  <section>
+    <h2>Part 2 — DOM Manipulation</h2>
+
+    <h3>Task 2 — Changing Content</h3>
+    <p id="text">This text will change when button clicked.</p>
+    <button id="btnText">Change Text</button>
+
+    <h3>Task 3 — Changing Styles</h3>
+    <div id="box">
+      <p id="styleText">This box will change background and font size.</p>
+    </div>
+    <button id="btnColor">Change Background</button>
+    <button id="btnFont">Change Font Size</button>
+
+    <h3>Task 4 — Creating & Removing Elements</h3>
+    <ul id="list">
+      <li>Item 1</li>
+      <li>Item 2</li>
+    </ul>
+    <button id="btnAdd">Add Item</button>
+    <button id="btnRemove">Remove Item</button>
+  </section>
+
+  
+  <section>
+    <h2>Part 3 — Events</h2>
+
+    <h3>Task 5 — Mouse Events</h3>
+    <div id="hoverBox" style="width:120px;height:80px;border:1px solid black;display:flex;align-items:center;justify-content:center;">
+      Hover me
+    </div>
+
+    <h3>Task 6 — Keyboard Events</h3>
+    <input id="inputText" type="text" placeholder="Type something..." />
+    <p>Live value: <span id="liveOutput"></span></p>
+
+    <h3>Task 7 — Calculator</h3>
+    <input id="numA" type="number" placeholder="A">
+    <input id="numB" type="number" placeholder="B">
+    <button class="calc" data-op="+">+</button>
+    <button class="calc" data-op="-">-</button>
+    <button class="calc" data-op="*">*</button>
+    <button class="calc" data-op="/">/</button>
+    <p>Result: <span id="result"></span></p>
+  </section>
+
+
+  <div class="container">
+    <div class="todo-list">
+      <h2>To-do list</h2>
+      <ul id="taskList"></ul>
+    </div>
+
+    <div class="add-task">
+      <h2>Add new task</h2>
+      <label>* Title</label>
+      <input type="text" id="taskTitle" placeholder="Enter task title">
+
+      <label>* Description</label>
+      <textarea id="taskDesc" placeholder="Enter description"></textarea>
+
+      <button onclick="addTask()">Add task</button>
+    </div>
+  </div>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
